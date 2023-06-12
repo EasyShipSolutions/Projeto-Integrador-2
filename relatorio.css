@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+/*Configurações que serão aplicadas em todo o documento*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+/*---------------------------------------------*/
+
+/*Configurações que serão aplicadas ao cabecalho*/
+#cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    background: #0088FF;
+}
+/*-------------------------------------------*/
+
+/*Estilizando a imagem dentro do cabecalho*/
+#cabecalho img{
+    padding-left: 10px;
+}
+/*--------------------------------------*/
+
+/*Estilizando o icone dentro do cabecalho*/
+.expand-icon{
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: white;
+    padding-top: 2px;
+    margin-left: 1265px;
+
+}
+/*-------------------------------------*/
+
+/*Estilizando o texto dentro do cabecalho*/
+.text-expand{
+    margin-right: 15px;
+    color: white;
+}
+/*--------------------------------*/
+
+/*Configurações que serão aplicadas a div barra-pesquisa*/
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1090px;
+    height: 47px;
+    margin-left: 405px;
+    background-color: #F5F5F5;
+}
+/*-----------------------------------------------------*/
+
+
+
+/*Estilizando o icone dentro do container*/
+.invoice-icon{
+    color: rgb(85, 83, 83);
+    font-size: 20px;
+}
+/*----------------------------------*/
+
+/*Estilizando o texto do icone*/
+.text-invoice{
+   padding-left: 5px;
+   font-weight: 700;
+   color: rgb(85, 83, 83);
+}
+/*--------------------------*/
+
+/*Estilizando o input CNPJ*/
+#search{
+    margin-top: 4px;
+    margin-left: 25px;
+    border: 2px solid #CCCCCC;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    font-weight: 500;
+}
+/*-----------------*/
+
+/*Estilizando o input data*/
+#data{
+    margin-top: 4px;
+    margin-left: 5px;
+    border: 2px solid #CCCCCC;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    font-weight: 500;
+}
+/*----------------------*/
+
+/*Estilizando o icone de bolt*/
+.bolt-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: #32CD32;
+    margin-bottom: 4px;
+}
+/*-------------------------*/

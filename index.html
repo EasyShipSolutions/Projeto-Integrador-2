@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Biblioteca para a utilização dos icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!------------------------------------------->
+    <link rel="stylesheet" href="relatorio.css">
     <title>SCNF-e</title>
 </head>
 <body>
-    
+     
+    <header id="cabecalho"> <!--Início cabeçalho-->
+
+        <img src="assets/Group 26.png" alt="iconpti">
+        <button class="expand-icon"><i class="fas fa-expand"></i></button>
+        <span class="text-expand">Tela Cheia</span>
+
+    </header> <!--Fim cabeçalho-->
+
+    <div class="container"> <!--Container barra de pesquisa-->
+        
+        <div class="barra-pesquisa"> <!--Início barra de pesquisa-->
+
+             <span class="invoice-icon"><i class="fas fa-file-invoice"></i></span> 
+             <span class="text-invoice">Relatório: NF-e</span>
+
+             <input type="text" id="search" placeholder="CNPJ">
+             <input type="text" id="data" placeholder="Data de Emissão">
+
+             <button class="bolt-icon"><i class="fas fa-bolt"></i></button>
+             <button class="table-icon"><i class="fas fa-table"></i></button>
+             <button class="filter-icon"><i class="fas fa-filter"></i></button>
+        </div> <!--Fim barra de pesquisa-->
+
+    </div> <!--Fim barra de pesquisa-->
+
+    <script src="nfe.js"></script> <!--Inclusão do arquivo JS-->
 </body>
 </html>
