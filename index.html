@@ -4,9 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Biblioteca para a utilização dos icones-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <!------------------------------------------->
+     <!--Link Jquery-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+     <!--------------->
+     <link rel="stylesheet" href="relatorio.css">
     <title>SCNF-e</title>
 </head>
 <body>
+
+   <header id="cabecalho">
+
+    <img src="assets/Group 26.png" alt="ptilogo">
+
+    <button id="expand-icon"><i class="fas fa-expand"></i></button>
+    <span class="txt-expand">Tela Cheia</span>
+
+   </header>
+
+   <div class="container"> <!--Início container-->
+
+     <div class="barra-pesquisa"> <!--Início barra-pesquisa-->
+
+        <span class="invoice-icon"><i class="fas fa-file-invoice"></i></span>
+        <span class="txt-invoice">Relatório: NF-e</span>
+
+        <input type="text" id="search" placeholder="CNPJ">
+        <input type="text" id="data" placeholder="Data de Emissão">
+
+        <button id="bolt-icon"><i class="fas fa-bolt"></i></button>
+        <button id="table-icon"><i class="fas fa-table"></i></button>
+        <button id="filter-icon"><i class="fas fa-filter"></i></button>
+
+     </div> <!--Fim barra-pesquisa-->
+
+   </div> <!--Fim Container-->
+
+
+   <div class="agrupar">
+
+    <p>ARRASTE PARA AGRUPAR UMA COLUNA</p>
+    <input type="text" id="pesquisar" placeholder="PESQUISAR TODOS OS CAMPOS">
+
+</div>
+
+<div class="tabela">
+
+    <table>
+     
+        <thead>
+
+            <tr>
+                <th><input type="checkbox"></th>
+                <th>Cancelada</th>
+                <th>Razão Social</i></th>
+                <th>CNPJ</th>
+                <th>NR.NF-e</th>
+                <th>Total</th>
+                <th>Chave</th>
+                <th>Data de Emissão</th>
+                <th>UF Origem</th>
+                <th>Tipo de Nota</th>
+                <th>Importar</th>
+                <th>Exportar</th>
+
+            </tr>
+        
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><i class="fas fa-search"></i></td>
+                <td><i class="fas fa-search"></i></td>
+                <td><i class="fas fa-search"></i></td>
+                <td><i class="fas fa-search"></i></td>
+                <td><i class="fas fa-search"></i></td>
+                <td><i class="fas fa-search"></i></td>
+                <td><i class="fas fa-search"></i></td>
+                <td><i class="fas fa-search"></i></td>
+                <td><i class="fas fa-search"></i></td>
+                <td><i class="fas fa-search"></i></td>
+                <td><i class="fas fa-search"></i></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Não</td>
+                <td>Uniamérica</td>
+                <td>42.951.428/3458-05</td>
+                <td>2023.1203</td>
+                <td>R$ 869,00</td>
+                <td>56.987.123/0000-00</td>
+                <td>27/02/2023</td>
+                <td>Paraná</td>
+                <td>Serviços</td>
+                <td><i class="fas fa-file-import"></i></td>
+                <td><i class="fas fa-file-export"></i></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Não</td>
+                <td>Uniamérica</td>
+                <td>42.951.428/3458-05</td>
+                <td>2023.1203</td>
+                <td>R$ 869,00</td>
+                <td>56.987.123/0000-00</td>
+                <td>27/02/2023</td>
+                <td>Paraná</td>
+                <td>Serviços</td>
+                <td><i class="fas fa-file-import"></i></td>
+                <td><i class="fas fa-file-export"></i></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Não</td>
+                <td>Uniamérica</td>
+                <td>42.951.428/3458-05</td>
+                <td>2023.1203</td>
+                <td>R$ 869,00</td>
+                <td>56.987.123/0000-00</td>
+                <td>27/02/2023</td>
+                <td>Paraná</td>
+                <td>Serviços</td>
+                <td><i class="fas fa-file-import"></i></td>
+                <td><i class="fas fa-file-export"></i></td>
+            </tr>
+
+    </table>
+
+</div>
+
+   <div class="menu-btn">
+
+    <i class="fas fa-bars"></i>
+
+   </div>
+
+   <div class="side-bar">
+
+    <div class="close-btn">
+
+        <i class="fas fa-times"></i>
+
+    </div>
+
+    <div class="menu">
+
+        <div class="item"><a href="#"><i class="fas fa-home"></i>Início</a></div>
+        <div class="item">
+            <a class="sub-btn"><i class="fas fa-file-invoice"></i>NF-e<i class="fas fa-angle-right dropdown"></i></a>
+
+            <div class="sub-menu">
+
+                <a href="#" class="sub-item">Notas Fiscais</a>
+                <a href="#" class="sub-item">Análise de Itens</a>
+                <a href="#" class="sub-item">Eventos de Averbação</a>
+                <a href="#" class="sub-item">Download em Lote</a>
+                <a href="#" class="sub-item">Acompanhar Manifestações</a>
+                <a href="#" class="sub-item">Configurar Avisos de NF-e</a>
+
+            </div>
+        </div>
+        <div class="item"><a href="#"><i class="fas fa-cog"></i>Configuração</a></div>
+        <div class="item"><a href="#"><i class="fas fa-upload"></i>Enviar Documentos</a></div>
+        <div class="item"><a href="#"><i class="fas fa-book"></i>Guia Rápido</a></div>
+        <div class="item"><a href="#"><i class="fas fa-user"></i>Usuário</a></div>
+        <div class="item"><a href="#"><i class="fas fa-sign-out-alt"></i>Sair</a></div>
+
+    </div>
+
+   </div>
+
+   <footer>
+
+    <i class="fas fa-filter"></i>
+    <button id="criar-filtro">Criar Filtro</button>
+
+   </footer>
     
+   <script src="nfe.js"></script>
 </body>
 </html>
